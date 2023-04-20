@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </header>
+    <div class="caixa"></div>
+    <h1 class="separa">Primeiro, seu prato</h1>
+    <div class="conteiner">
+        <div data-test = "dish" class="prato" id="prato1" onclick="escolherprato1(), PossoPedir()">
+            <img src="imagens/frango_yin_yang.png">
+            <h1 data-test = "item-name" class="produto">Frango Ying-Yang</h1>
+            <h2 class="sobre">Um pouco de batata, um pouco de salada</h2>
+            <h3 data-test = "item-price" class="preco">R$ 15,00</h3>
+        </div>
+        <div data-test = "dish" class="prato" id="prato2" onclick="escolherprato2(), PossoPedir()">
+            <img src="imagens/bife.jpg">
+            <h1 data-test = "item-name" class="produto">Bife com batatas</h1>
+            <h2 class="sobre">Um prato com bife acebolado e batatas</h2>
+            <h3 data-test = "item-price" class="preco">R$ 17,00</h3>
+        </div>
+        <div data-test = "dish" class="prato" id="prato3" onclick="escolherprato3(), PossoPedir()">
+            <img src="imagens/macarrao.jpg">
+            <h1 data-test = "item-name" class="produto">Macarrão Bolonhesa</h1>
+            <h2 class="sobre">Uma macarronada com carne moída</h2>
+            <h3 data-test = "item-price" class="preco">R$ 16,00</h3>
+        </div>
+    </div>
+    <h1 class="separa">Agora, sua bebida</h1>
+    <div class="conteiner">
+        <div data-test = "drink" class="bebida" id="bebida1" onclick="escolherbebida1(), PossoPedir()">
+            <img src="imagens/suco.jpg">
+            <h1 data-test = "item-name" class="produto">Suco Natural</h1>
+            <h2 class="sobre">Garrafa 500ml</h2>
+            <h3 data-test = "item-price" class="preco">R$ 5,00</h3>
+        </div>
+        <div data-test = "drink" class="bebida" id="bebida2" onclick="escolherbebida2(), PossoPedir()">
+            <img src="imagens/coca-cola.png">
+            <h1 data-test = "item-name" class="produto">Coquinha gelada</h1>
+            <h2 class="sobre">Lata 350ml</h2>
+            <h3 data-test = "item-price" class="preco">R$ 7,00</h3>
+        </div>
+        <div data-test = "drink" class="bebida" id="bebida3" onclick="escolherbebida3(), PossoPedir()">
+            <img src="imagens/agua.jpg">
+            <h1 data-test = "item-name" class="produto">Agua gelada sem gás</h1>
+            <h2 class="sobre">Garrafa 500ml</h2>
+            <h3 data-test = "item-price" class="preco">R$ 4,00</h3>
+        </div>
+    </div>
+    <h1 class="separa">Por fim, sua sobremesa</h1>
+    <div class="conteiner">
+        <div data-test = "dessert" class="sobremesa" id="sobremesa1" onclick="escolhersobremesa1(), PossoPedir()">
+            <img src="imagens/pudim.png">
+            <h1 data-test = "item-name" class="produto">Pudim</h1>
+            <h2 class="sobre">Apenas pudim</h2>
+            <h3 data-test = "item-price" class="preco">R$ 7,00</h3>
+        </div>
+        <div data-test = "dessert" class="sobremesa" id="sobremesa2" onclick="escolhersobremesa2(), PossoPedir()">
+            <img src="imagens/maracuja.jpg">
+            <h1 data-test = "item-name" class="produto">Mousse de Maracujá</h1>
+            <h2 class="sobre">Enfeitado com sementes em cima</h2>
+            <h3 data-test = "item-price" class="preco">R$ 10,00</h3>
+        </div>
+        <div data-test = "dessert" class="sobremesa" id="sobremesa3" onclick="escolhersobremesa3(), PossoPedir()">
+            <img src="imagens/limao.jpg">
+            <h1 data-test = "item-name" class="produto">Mousse de Limão</h1>
+            <h2 class="sobre">Enfeitad com a casca raspada</h2>
+            <h3 data-test = "item-price" class="preco">R$ 8,00</h3>
+        </div>
+    </div>
+    <div class="caixa2"></div>
+    <div class="rodape">
+        <div data-test = "order-btn" class="faz-pedido">
+            <h1>Selecione os 3 itens para fechar o pedido</h1>
+        </div>
+        <div data-test = "order-btn" class="fazer-pedido" onclick="fecharpedido()">
+            <h1>Fechar pedido</h1>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
